@@ -10,7 +10,7 @@ xie:
 user_info (including show and change user info)(without imgs) showing is already ok, but changing is still debugging.
 find_password (including email and telephone) by email is already ok, but by telephone is still debugging.
 ran：
-book_info (including insert, show and change book info) is already ok.
+book_info
 jiang:
 shoping_cart
 yang：
