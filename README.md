@@ -5,6 +5,10 @@ We may do it online finally,
 By Oct.10th,2018:
 xie, ran, and jiang:
 login (including login and register) is already ok.
+
+Difficulty: How to select many datas in the database and save them in an array and then print them.
+We use "Do-While" loop to print them one by one.
+
 By Nov.6th,2018:
 xie:
 user_info (including show and change user info)(without imgs) showing is already ok, but changing is still debugging.
