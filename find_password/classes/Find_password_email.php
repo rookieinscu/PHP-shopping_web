@@ -1,12 +1,6 @@
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>无标题文档</title>
-</head>
-<body>
 <?php
 	session_start();
-	include_once("../../dbconnection/db.php");
+	require_once("../../dbconnection/db.php");
 	$user_id=$_REQUEST["user_id"];
 	$user_email=$_REQUEST["user_email"];
 	setcookie('user_email',$user_email,time()+900);
@@ -43,7 +37,7 @@
 					$name_pass=implode(' ',$arr);
 					$token = md5($name_pass);//组合验证码
 				}
-				$url = "http://localhost/SCU/find_password/views/reset_password.php?email=".$user_email."&token=".$token;//构造URL
+				$url = "http://localhost/SCU/find_password/views/reset_password_email.php?email=".$user_email."&token=".$token;//构造URL
 				$time = date("Y-m-d H:i:s"); 
 				$result = sendmail($time,$user_email,$url);
 				if($result==1){//邮件发送成功
@@ -79,5 +73,3 @@
 	}
 
 ?>
-</body>
-</html>

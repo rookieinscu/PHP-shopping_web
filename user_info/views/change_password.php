@@ -1,6 +1,4 @@
 <?php
-require_once("../classes/Change_user_info.php");
-$changeuserinfo = new Changeuserinfo();
 session_start();
 echo($_SESSION['user_nickname']);
 ?>，您正在修改密码<br></p>

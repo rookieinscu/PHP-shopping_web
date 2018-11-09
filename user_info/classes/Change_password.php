@@ -17,12 +17,13 @@ class Changepassword{
 				$user_id=$_SESSION['user_id'];
 				$sql1 = "SELECT user_password
 				         FROM user_info
-						 WHERE user_id = '" .$user_id. "';";
+						 WHERE user_id = '$user_id';";	
 				$query_check_password = $this->db_connection->query($sql1);
+				$result_row = $query_check_password->fetch_object();
 				if($_POST['user_password'] == $result_row->user_password){				
 					$sql2 = "UPDATE user_info 
 						SET user_password=" . $_POST['user_password_new'] . "
-						WHERE user_id = '" .$user_id. "';";
+						WHERE user_id = '$user_id';";
 					$query_new_user_changepass = $this->db_connection->query($sql2);
                 	if ($query_new_user_changepass) {
 						echo "<script>alert('密码修改成功，请您重新登录');

@@ -1,4 +1,3 @@
-<?php 
 <div class="htmleaf-container">
 	<div class="wrapper">
 		<div class="container">
