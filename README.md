@@ -1,5 +1,5 @@
 # SCUbookstore
-a hmework of php7.1.9 and mysql5.7.19, including login, register, user admin, book admin, shopping admin, friends admin, and integral.
+a homework of php7.1.9 and mysql5.7.19, including login, register, user admin, book admin, shopping admin, friends admin, and integral.
 We may do it online finally, also may not.
 classify the homework into 6 modulars: login, user info, book info, trade info, intergral info, and admin info.
 
