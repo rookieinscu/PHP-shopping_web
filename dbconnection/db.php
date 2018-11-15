@@ -15,3 +15,4 @@ define("DB_HOST", "localhost");
 define("DB_NAME", "scubookstore");
 define("DB_USER", "xieshenhao");
 define("DB_PASS", "ao951po753wa456");
+?>
