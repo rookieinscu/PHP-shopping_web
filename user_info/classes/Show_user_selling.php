@@ -16,6 +16,7 @@ class Showuserselling{
 	<th>出版社</th>
 	<th>书籍价格</th>
 	<th>书籍上架时间</th>
+	<th>查看详情</th>
   </tr>
 <?php		
 		$this->db_connection = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
@@ -47,13 +48,16 @@ class Showuserselling{
 						if ($result_row->book_sale==1){
 ?>
                         <tr>
-    						<td><?php echo $_SESSION['book_number']; ?></td>
+    						<form method="post" action="../../book_info/changebookinfo/changebookinfo.php">
+							<td><input id="book_number" type="text" name="book_number" value="<?php echo $_SESSION['book_number']; ?>" type=hidden required /></td>
     						<td><?php echo $_SESSION['book_name']; echo"("; echo $_SESSION['book_edition']; echo")"?></td>
 							<td><?php echo $_SESSION['book_writer']; ?></td>
 							<td><?php echo $_SESSION['book_course']; ?></td>
 							<td><?php echo $_SESSION['book_publisher']; ?></td>
 							<td><?php echo $_SESSION['book_price']; ?></td>
 							<td><?php echo $_SEESION['book_date']; ?></td>
+							<td><input type="submit"  name="show_detailed_info" value="查看" /></td>
+							</form>
   						</tr>
 <?php
 													  }

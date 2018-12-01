@@ -2,7 +2,6 @@
 $showuserinfo = new Showuserinfo();
 class Showuserinfo{
 	public function __construct(){
-		require_once("../../dbconnection/db.php");
 		$this->db_connection = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
             if (!$this->db_connection->set_charset("utf8")) {
                 $this->errors[] = $this->db_connection->error;
@@ -21,8 +20,8 @@ class Showuserinfo{
 						$_SESSION['user_email'] = $result_row->user_email;
 						$_SESSION['register_date'] = $result_row->register_date;
 						$_SESSION['user_nickname'] = $result_row->user_nickname;
-						//$_SESSION['user_integral'] = $result_row->user_integral;
-						//$_SESSION[''] = $result_row->;
+						$_SESSION['user_integral'] = $result_row->user_integral;
+						$_SESSION['user_img'] = $result_row->user_img;
 						//$_SESSION[''] = $result_row->;
 			}
 	}
