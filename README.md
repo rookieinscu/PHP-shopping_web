@@ -23,6 +23,3 @@ book_info: you can search several words in the book name to find out if we have 
 Difficulty: How to select many datas in the database and save them in an array and then print them.
 We use "Do-While" loop to print them one by one.
 
-
-By Nov.13th,2018:
-buy ecs through aliyun, we can visit website from ecs, but cannot visit website from any PC.
